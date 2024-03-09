@@ -1,13 +1,91 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "UraniTag",
+      "type": "tag",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "urani_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/ingots/uranium.json"
+        ]
+      },
+      "path": "~/Main"
+    },
+    {
+      "name": "UraniumIngot",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/kiencore/kbmsnucleartech/item/UraniumIngotItem.java",
+          "src/main/resources/assets/kbms_nuclear_tech/models/item/uranium_ingot.json"
+        ]
+      },
+      "path": "~/NTM Resources and Parts"
+    },
+    {
+      "name": "RATTAB",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rattab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/NTM Resources and Parts"
+    },
+    {
+      "name": "UraniIngotTooltip",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "urani_ingot_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/kiencore/kbmsnucleartech/procedures/UraniIngotTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/NTM Resources and Parts"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item_group.kbms_nuclear_tech.rattab": "NTM Resources and Parts",
+      "item.kbms_nuclear_tech.uranium_ingot": "Uranium Ingot"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Main",
+        "children": []
+      },
+      {
+        "name": "NTM Resources and Parts",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "kbms_nuclear_tech",
@@ -22,6 +100,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "fusion",
       "geckolib",
       "jei"
     ],

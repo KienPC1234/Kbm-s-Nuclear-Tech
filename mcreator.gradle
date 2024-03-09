@@ -1,4 +1,14 @@
 repositories {
+	maven {
+		url = "https://api.modrinth.com/maven"
+	}
+}
+	dependencies {
+		implementation fg.deobf("maven.modrinth:fusion-connected-textures:1.1.0c-forge-mc1.20.1")
+}
+
+
+repositories {
   maven {
       url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
   }

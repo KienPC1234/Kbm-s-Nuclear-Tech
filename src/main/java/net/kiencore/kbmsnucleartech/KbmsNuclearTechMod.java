@@ -29,6 +29,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.kiencore.kbmsnucleartech.init.KbmsNuclearTechModTabs;
+import net.kiencore.kbmsnucleartech.init.KbmsNuclearTechModItems;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -46,6 +49,10 @@ public class KbmsNuclearTechMod {
 	public KbmsNuclearTechMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		KbmsNuclearTechModItems.REGISTRY.register(bus);
+
+		KbmsNuclearTechModTabs.REGISTRY.register(bus);
 
 	}
 

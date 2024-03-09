@@ -20,6 +20,12 @@ authors="kienpc, MCreator"
 
 
 [[dependencies.kbms_nuclear_tech]]
+    modId="fusion"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.kbms_nuclear_tech]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"
